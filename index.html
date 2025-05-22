@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz & API Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="quizCounter" style="text-align:right; color:#2d217c; font-weight:bold; margin-bottom:4px;"></div>
+    <div id="quizDots" style="display:flex; gap:10px; margin-bottom:18px; margin-top:4px; justify-content:center;"></div>
+    <h1>Quiz</h1>
+    <!-- Interactive Quiz Section -->
+    <div class="quiz-section">
+      <div class="quiz-question" id="quizQuestion"></div>
+      <div class="quiz-options" id="quizOptions"></div>
+      <button class="quiz-btn" id="quizSubmit">Submit</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+    <!-- API Fetch Section -->
+    <div class="api-section">
+      <h2>Joke</h2>
+      <button class="joke-btn" id="jokeBtn">Get a Joke</button>
+      <div class="joke-box" id="jokeBox"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

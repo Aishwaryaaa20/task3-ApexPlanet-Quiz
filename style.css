@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(44,33,124,0.08);
+  padding: 24px 32px;
+}
+h1 {
+  text-align: center;
+  color: #2d217c;
+  margin-bottom: 24px;
+}
+.quiz-section, .api-section {
+  margin-bottom: 32px;
+}
+.quiz-question {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.quiz-options label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.quiz-btn {
+  margin-top: 10px;
+  background: #2d217c;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.quiz-btn:hover {
+  background: #1a124b;
+}
+.quiz-result {
+  margin-top: 14px;
+  font-weight: bold;
+}
+.joke-box {
+  background: #edeefc;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  min-height: 40px;
+}
+.joke-btn {
+  margin-top: 10px;
+  background: #2d217c;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.joke-btn:hover {
+  background: #1a124b;
+}
+.quiz-progress {
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  height: 18px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.quiz-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #2d217c 60%, #6c63ff 100%);
+  transition: width 0.4s;
+}
+/* Responsive Design */
+@media (max-width: 700px) {
+  .container {
+    padding: 18px 10px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  .quiz-question {
+    font-size: 1rem;
+  }
+  .joke-box {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 12px 4px;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+}
+/* New styles for quiz dots */
+.quiz-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.quiz-dot.correct { background: #34a853; }
+.quiz-dot.incorrect { background: #d8000c; }
+.quiz-dot.active { background: #6c63ff; }
